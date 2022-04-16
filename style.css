@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.container {
+	margin: 10px auto;
+	width: 1170px;
+}
+
+td {
+	border: 3px solid white;
+	height: 50px;
+	width: 500px;
+	font-size: 30px;
+	text-align: center;
+	background-color: #999;
+	color: white;
+	font-family: trirong;
+}
+
+input {
+	border: transparent;
+	height: 50px;
+	width: inherit;
+	font-size: 30px;
+	text-align: center;
+	background-color: #999;
+	color: white;
+	font-family: trirong;
+}
+
+
+.label {
+	background-color: goldenrod;
+	color: black;
+}
+
+.table {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	font-family: trirong;
+	text-shadow: 3px 3px 3px #ababab;
+	margin-bottom: 10px;
+}
+

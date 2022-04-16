@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Calculator 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+</head>
+<body>
+	<div class="container">
+        <div class="title">
+            <h1>Stock Calculator</h1>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <td class="label row1">Stock Price</td>
+                    <td class="label">Stock Amount</td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="stock-price" placeholder="*requires input" oninput="myFunction()"></input></td>
+                    <td class="amount" id="amount"></td>
+                </tr>
+                <tr>
+                    <td class="label row1">Buying Power</td>
+                    <td class="label">Target Margin</td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="buying-power" placeholder="*requires input" oninput="myFunction()"></input></td>
+                    <td class="margin" id="margin"></td>
+                </tr>
+                <tr>
+                    <td class="label">Target Net</td>
+                    <td class="label row1">Target Selling Price</td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="net" placeholder="*requires input" oninput="myFunction1()" onchange="myFunction1()" onclick="myFunction1()"></input></td>
+                    <td class="target-price" id="target-price"></td>
+                </tr>
+                <tr>
+                    <td class="label">Max Loss $</td>
+                    <td class="label">Stop Limit Order</td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="stop-loss-dol" placeholder="*requires input" oninput="myFunction2()"></input></td>
+                    <td class="stop-limit-order-dol" id="stop-limit-order-dol"></td>
+                </tr>
+                <tr>
+                    <td class="label">Max Loss % (decimal) </td>
+                    <td class="label">Stop Limit Order</td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="stop-loss-per" placeholder="*requires input" oninput="myFunction3()"></input></td>
+                    <td class="stop-limit-order-per" id="stop-limit-order-per"></td> 
+                </tr>
+                <tr>
+                    <td class="label">Stock Hold Duration (days)</td>
+                    <td class="label">Daily Average</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="trading-days" placeholder="*requires input" oninput="myFunction4()"></input></td>
+                    <td class="daily-avg" id="daily-avg"></td>
+                </tr>
+            </table>
+        </div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
