@@ -7,7 +7,7 @@ function myFunction() {
     var stopLossDol = document.getElementById("stop-loss-dol").value;
     var stopLossPer = document.getElementById("stop-loss-per").value;
     var tradingDays = document.getElementById("trading-days").value;
-    document.querySelector(".amount").innerHTML = (buyPower / stockPrice);
+    document.querySelector(".amount").innerHTML = Math.floor(buyPower / stockPrice);
 }
 
 function myFunction1() {
@@ -19,8 +19,8 @@ function myFunction1() {
     var stopLossDol = document.getElementById("stop-loss-dol").value;
     var stopLossPer = document.getElementById("stop-loss-per").value;
     var tradingDays = document.getElementById("trading-days").value;
-    document.querySelector(".margin").innerHTML = (targetPrice - (stockPrice * amount)).toFixed(2);
-    document.querySelector(".target-price").innerHTML = (((amount * stockPrice) + (net)) / (amount)).toFixed(2)
+    document.querySelector(".target-price").innerHTML = (((amount * stockPrice) + parseInt(net)) / amount).toFixed(2);
+    document.querySelector(".margin").innerHTML = (targetPrice - stockPrice).toFixed(2)
 }
 
 function myFunction2() {
@@ -56,5 +56,5 @@ function myFunction4() {
     var stopLossDol = document.getElementById("stop-loss-dol").value;
     var stopLossPer = document.getElementById("stop-loss-per").value;
     var tradingDays = document.getElementById("trading-days").value;
-    document.querySelector(".daily-avg").innerHTML = (net / tradingDays).toFixed(2);
+    document.querySelector(".daily-avg").innerHTML = (net / tradingDays).toFixed(1);
 }
